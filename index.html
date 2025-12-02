@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All 5 Projects Combined</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<div class="main-container">
+
+    <div class="project-section" id="project-1">
+        <h1>Project 1: Portfolio / Landing Page</h1>
+        
+        <header class="portfolio-header">
+            <h2>Priyanka Kumari</h2>
+            <p>Front-End Developer</p>
+            <a href="#about-1" class="cta-button">About Me</a>
+        </header>
+
+        <section class="portfolio-card" id="about-1">
+            <h3>About Me</h3>
+            <p>I am learning HTML, CSS, and JavaScript to build modern web projects.</p>
+        </section>
+    </div>
+
+    <div class="project-section" id="project-2">
+      
+        <h1>Project 2: Image Gallery App</h1>
+
+        <section class="gallery-grid">
+            <div class="gallery-item"><img src="https://via.placeholder.com/400x300/A29BFE/FFFFFF?text=Design+1" alt="Design 1" class="gallery-img-p2"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/300x400/6C5CE7/FFFFFF?text=Design+2" alt="Design 2" class="gallery-img-p2"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/400x400/00B894/FFFFFF?text=Design+3" alt="Design 3" class="gallery-img-p2"></div>
+            <div class="gallery-item"><img src="https://via.placeholder.com/500x350/0984E3/FFFFFF?text=Design+4" alt="Design 4" class="gallery-img-p2"></div>
+        </section>
+        
+        <div id="image-modal-p2" class="modal-p2">
+            <span class="close-btn-p2">&times;</span>
+            <img class="modal-content-p2" id="modal-image-p2">
+        </div>
+    </div>
+    
+    <div class="project-section" id="project-3">
+        <h1>Project 3: To-Do List App</h1>
+
+        <div class="todo-app-p3">
+            <h3>Daily Tasks</h3>
+            <div class="todo-row-p3">
+                <input type="text" id="todo-input-p3" placeholder="Add your task here"> 
+                <button id="add-task-btn-p3">Add</button>
+            </div>
+            
+            <ul id="task-list-p3">
+                </ul>
+        </div>
+    </div>
+
+    <div class="project-section" id="project-4">
+        <h1>Project 4: Simple Calculator</h1>
+
+        <div class="calculator-body-p4">
+            <input type="text" placeholder="0" id="calc-screen-p4" readonly>
+            
+            <div class="calc-grid-p4">
+                <button onclick="calcClearP4()" class="operator-p4 ac-p4">AC</button>
+                <button onclick="calcDelP4()" class="operator-p4 del-p4">DEL</button>
+                <button onclick="calcDisplayP4('%')" class="operator-p4">%</button>
+                <button onclick="calcDisplayP4('/')" class="operator-p4">/</button>
+                
+                <button onclick="calcDisplayP4('7')">7</button>
+                <button onclick="calcDisplayP4('8')">8</button>
+                <button onclick="calcDisplayP4('9')">9</button>
+                <button onclick="calcDisplayP4('')" class="operator-p4"></button>
+                
+                <button onclick="calcDisplayP4('4')">4</button>
+                <button onclick="calcDisplayP4('5')">5</button>
+                <button onclick="calcDisplayP4('6')">6</button>
+                <button onclick="calcDisplayP4('-')" class="operator-p4">-</button>
+                
+                <button onclick="calcDisplayP4('1')">1</button>
+                <button onclick="calcDisplayP4('2')">2</button>
+                <button onclick="calcDisplayP4('3')">3</button>
+                <button onclick="calcDisplayP4('+')" class="operator-p4">+</button>
+                
+                <button onclick="calcDisplayP4('.')">.</button>
+                <button onclick="calcDisplayP4('0')">0</button>
+                <button onclick="calcCalculateP4()" class="equal-btn-p4">=</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="project-section" id="project-5">
+        <h1>Project 5: Simple Card Placeholder</h1>
+        <div class="placeholder-card-p5">
+            <p>This section is ready for your next big project idea!</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
