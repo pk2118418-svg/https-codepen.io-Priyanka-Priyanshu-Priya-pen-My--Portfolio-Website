@@ -1,0 +1,239 @@
+/* BASE STYLES & LAYOUT */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f7f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.project-section {
+    margin-bottom: 60px;
+    padding: 30px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.project-section h1 {
+    border-bottom: 3px solid #6c5ce7;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    color: #6c5ce7;
+    text-align: center;
+}
+
+/* --- PROJECT 1: PORTFOLIO STYLES --- */
+.portfolio-header {
+    background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.portfolio-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #00b894;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    transition: transform 0.3s;
+}
+
+.cta-button:hover { transform: scale(1.05); }
+
+/* --- PROJECT 2: IMAGE GALLERY STYLES --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-img-p2 {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery-img-p2:hover { transform: scale(1.02); }
+
+/* Modal (Popup) Styling for Gallery */
+.modal-p2 {
+    display: none; 
+    position: fixed;
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.modal-content-p2 {
+    margin: 10% auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.close-btn-p2 {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* --- PROJECT 3: TO-DO LIST STYLES --- */
+.todo-app-p3 {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    background: #eaf1f7;
+}
+
+.todo-row-p3 {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+#todo-input-p3 {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+#add-task-btn-p3 {
+    background: #ff5e57;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+#task-list-p3 li {
+    list-style: none;
+    padding: 10px;
+    background: #f9f9f9;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+#task-list-p3 li.checked {
+    text-decoration: line-through;
+    color: #888;
+    background: #e6e6e6;
+}
+
+#task-list-p3 li span.delete-btn-p3 {
+    position: absolute;
+    right: 10px;
+    color: #aaa;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#task-list-p3 li span.delete-btn-p3:hover {
+    color: #ff5e57;
+}
+
+/* --- PROJECT 4: CALCULATOR STYLES --- */
+.calculator-body-p4 {
+    background: #3a4452; 
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+#calc-screen-p4 {
+    width: 90%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #494949;
+    color: #fff;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.calc-grid-p4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.calc-grid-p4 button {
+    border: none;
+    border-radius: 10px;
+    background: #3a4452;
+    color: #fff;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.calc-grid-p4 button.operator-p4 {
+    color: #61ff75;
+}
+
+.calc-grid-p4 button.equal-btn-p4 {
+    grid-column: span 2;
+    background: #fb7c14;
+}
+
+.calc-grid-p4 button:hover {
+    background: #4d5867;
+}
+
+.calc-grid-p4 button.equal-btn-p4:hover {
+    background: #e06c0f;
+}
+
+/* --- PROJECT 5: Simple Card Placeholder --- */
+.placeholder-card-p5 {
+     padding: 40px;
+     text-align: center;
+     border: 2px dashed #a29bfe;
+     border-radius: 10px;
+     background: #f0f0ff;
+}
+
+
+
+Resources
